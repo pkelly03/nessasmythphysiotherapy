@@ -2720,4 +2720,7 @@ form#newsletter input[type=submit] {
 	
 	
 }
-	
+
+.navbar img {
+    padding-top: 4px;
+}

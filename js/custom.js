@@ -1,36 +1,31 @@
 /* -------------------- Twitter --------------------- */
 
-jQuery(document).ready(function($){
-	
-	$.getJSON('twitter.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=bootstrapmaster&count=3&include_rts=false&exclude_replies=true'), function(tweets){
-		$("#twitter").html(tz_format_twitter(tweets));
-	}); 
-
-});
-
 /* ------------------- Client Carousel --------------------- */
 
 jQuery(document).ready(function($){
 
-	$('.clients-carousel').flexslider({
-	    animation: "slide",
-		easing: "swing",
-	    animationLoop: true,
-	    itemWidth: 1,
-	    itemMargin: 1,
-	    minItems: 1,
-	    maxItems: 8,
-		controlNav: false,
-		directionNav: false,
-		move: 2
-      });
+    $('.carousel').carousel()
 
-	$('#flex1').flexslider();
-	
-	$('#flex2').flexslider({
-	    animation: "slide",
-	    controlNav: "thumbnails"
-	 });
+
+//	$('.clients-carousel').flexslider({
+//	    animation: "slide",
+//		easing: "swing",
+//	    animationLoop: true,
+//	    itemWidth: 1,
+//	    itemMargin: 1,
+//	    minItems: 1,
+//	    maxItems: 8,
+//		controlNav: false,
+//		directionNav: false,
+//		move: 2
+//      });
+//
+//	$('#flex1').flexslider();
+//
+//	$('#flex2').flexslider({
+//	    animation: "slide",
+//	    controlNav: "thumbnails"
+//	 });
 	
 }); 
 
